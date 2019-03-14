@@ -16,7 +16,8 @@
             "github": "https://github.com/huziyao/JavaNote"
         },
         "sidebar": {
-            "Home": "http://huziyao.live"
+            "关于我的": "http://huziyao.live/about",
+            "我的个人博客": "http://huziyao.live"
         }
     },
     "plugins": [
@@ -27,12 +28,21 @@
         "splitter@^0.0.8",
         "tbfed-pagefooter@^0.0.1",
         "expandable-chapters-small@^0.1.7",
-        "anchor-navigation-ex@0.1.8"
+        "anchor-navigation-ex@0.1.8",
+        "multipart",
+        "ancre-navigation",
+        "code",
+        "back-to-top-button",
+        "copy-code-button",
+        "-lunr", "-search", "search-pro",
+        "advanced-emoji",
+        "flexible-alerts",
+        "lightbox"
     ],
 
     "pluginsConfig": {
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
         },
         "github": {
             "url": "https://github.com/huziyao/JavaNote"
@@ -56,7 +66,15 @@
             "tocLevel1Icon": "fa fa-hand-o-right",
             "tocLevel2Icon": "fa fa-hand-o-right",
             "tocLevel3Icon": "fa fa-hand-o-right"
-        }
+        },
+        "flexible-alerts": {
+              "style": "callout",
+              "comment": {
+              "label": "Comment",
+              "icon": "fa fa-comments",
+              "className": "info"
+      }
+    }
 
 
     }
