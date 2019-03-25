@@ -3,16 +3,10 @@
 ## 引言 
 -   [引言](README.md)
 
-
-<<<<<<< HEAD
 ## Java性能优化
 -   [优化之路](java performance/java performance.md)
 -   [性能测试方法](java performance/test function.md)
 -   [JMH详解](java performance/jmh.md)
-=======
-## JVM
--   [优化之路](jvm/jvm.md)
->>>>>>> origin/master
 
 ## 多线程
 
