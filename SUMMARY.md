@@ -4,13 +4,17 @@
 -   [引言](README.md)
 
 
+<<<<<<< HEAD
+## Java性能优化
+-   [优化之路](java performance/java performance.md)
+-   [性能测试方法](java performance/test function.md)
+-   [JMH详解](java performance/jmh.md)
+=======
 ## JVM
 -   [优化之路](jvm/jvm.md)
--   [Part II](part2/README.md)
-     - [We love feedback](part2/feedback_please.md)
-     - [Better tools for authors](part2/better_tools.md)
+>>>>>>> origin/master
 
-##多线程
+## 多线程
 
 
 
@@ -27,4 +31,11 @@
 
 
 ## 设计模式
+
+
+
+## 生活随笔
+
+-   [生活随笔](other/other.md)
+-   [走出抑郁症](other/other1.md)
 
