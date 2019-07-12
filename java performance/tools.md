@@ -608,9 +608,9 @@ KiB Swap:   524284 total,   524284 free,        0 used.  3610664 avail Mem
 
 - Windows系统使用 该命令：
 
-  ```bash
+```bash
   typeperf -si 1 "\System\Processor Queue Length"
-  ```
+```
 
 - Linux 可以使用vmstat或者top查看
 
@@ -619,15 +619,24 @@ KiB Swap:   524284 total,   524284 free,        0 used.  3610664 avail Mem
 
 - Linux系统使用sysstat包的pidstat查看
 
-  ```bash
-  xxxxxxxxxx $ pidstat  -w -I 1 5Linux 4.9.125-linuxkit (372caddfa2a9)   07/12/19  _x86_64_  (4 CPU)17:20:29      UID       PID   cswch/s nvcswch/s  Command17:20:30        0         8      1.00      0.00  sshd17:20:30        0        26      1.00      0.00  pidstat	bash
-  ```
+```bash
+
+pidstat  -w -I -p 1 5
+Linux 4.9.125-linuxkit (372caddfa2a9) 	07/12/19 	_x86_64_	(4 CPU)
+
+21:37:55      UID       PID   cswch/s nvcswch/s  Command
+21:38:00        0         1      0.00      0.00  run.sh
+21:38:05        0         1      0.00      0.00  run.sh
+21:38:10        0         1      0.00      0.00  run.sh
+
+```
 
 ### 1.5 磁盘使用率
 
 -  Linux系统使用iostat
 
-  ```bash
+```bash
+
   iostat  -xm 5
   Linux 4.9.125-linuxkit (372caddfa2a9) 	07/12/19 	_x86_64_	(4 CPU)
   
@@ -639,12 +648,15 @@ KiB Swap:   524284 total,   524284 free,        0 used.  3610664 avail Mem
   scd0              0.00     0.00    0.19    0.00     0.01     0.00   135.40     0.00    0.57    0.57    0.00   0.45   0.01
   scd1              0.00     0.00    0.00    0.00     0.00     0.00    51.00     0.00    0.00    0.00    0.00   0.00   0.00
   scd2              0.00     0.00    0.27    0.00     0.02     0.00   189.19     0.00    0.66    0.66    0.00   0.54   0.01
-  ```
+  
+```
 
 ### 1.6 网络使用率
 
 - Linux使用nicstat
+
 ```bash
+
  nicstat 5
     Time      Int   rKB/s   wKB/s   rPk/s   wPk/s    rAvs    wAvs %Util    Sat
 17:48:21     eth0    5.56    0.14    4.20    1.68  1357.2   83.94  0.00   0.00
@@ -664,9 +676,8 @@ rAvs	#平均读的数据包大小
 wAvs	#平均写的数据包大小 
 %Util	#接口的利用率百分比 
 Sat	#每秒的错误数，接口接近饱和的一个指标
+
 ```
-
-
 
 ## 2. JAVA监控工具和分析
 
@@ -679,6 +690,7 @@ Sat	#每秒的错误数，接口接近饱和的一个指标
 - jcmd 是JDK1.7之后推出的，实现了jmap大部分功能，官方也建议使用jcmd替代jmap
 
 ```bash
+
   jcmd -l #查看所有java 进程
   jcmd process_id help <command> #查看特定命令语法或所有语法
   
