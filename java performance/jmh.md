@@ -67,7 +67,7 @@ public class FirstBenchmark {
 
 结果：
 
-```shell
+```bash
 # JMH 1.14.1 (released 39 days ago)
 # VM version: JDK 1.8.0_11, VM 25.11-b03
 # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_11.jdk/Contents/Home/jre/bin/java

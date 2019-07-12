@@ -22,7 +22,6 @@
     },
     "plugins": [
         "github@^2.0.0",
-        "edit-link@^2.0.2",
         "anchors@^0.7.1",
         "include-codeblock@^3.0.2",
         "splitter@^0.0.8",
@@ -37,7 +36,9 @@
         "-lunr", "-search", "search-pro",
         "advanced-emoji",
         "flexible-alerts",
-        "lightbox"
+        "lightbox",
+        "prism", 
+        "-highlight"
     ],
 
     "pluginsConfig": {
@@ -57,10 +58,6 @@
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "edit-link": {
-            "base": "https://github.com/huziyao/JavaNote/edit/master",
-            "label": "Edit This Page"
-        },
         "anchor-navigation-ex": {
             "isRewritePageTitle": false,
             "tocLevel1Icon": "fa fa-hand-o-right",
@@ -73,7 +70,12 @@
               "label": "Comment",
               "icon": "fa fa-comments",
               "className": "info"
-      }
+        },
+        "prism": {
+                "css": [
+                  "prismjs/themes/prism-okaidia.css"
+                ]
+        }
     }
 
 
