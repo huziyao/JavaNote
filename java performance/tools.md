@@ -24,7 +24,7 @@
 
 
 
-  #### 1.1.1 vmstat是Virtual Meomory Statistics（虚拟内存统计）的缩写，可对操作系统的虚拟内存、进程、IO读写、CPU活动等进行监视。它是对系统的整体情况进行统计，不足之处是无法对某个进程进行深入分析。
+**vmstat是Virtual Meomory Statistics（虚拟内存统计）的缩写，可对操作系统的虚拟内存、进程、IO读写、CPU活动等进行监视。它是对系统的整体情况进行统计，不足之处是无法对某个进程进行深入分析。 **
 
 指令所在路径：/usr/bin/vmstat
 
