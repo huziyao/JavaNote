@@ -16,8 +16,6 @@
             "github": "https://github.com/huziyao/JavaNote"
         },
         "sidebar": {
-            "关于我的": "http://huziyao.live/about",
-            "我的个人博客": "http://huziyao.live"
         }
     },
     "plugins": [
